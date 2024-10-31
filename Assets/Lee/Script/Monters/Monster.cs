@@ -15,7 +15,11 @@ public class Monster : MonoBehaviour
     }
     public void Attack()
     {
-
+        float distance = Vector3.Distance(player.transform.position, transform.position);
+        if (distance <= data.attackDistance)
+        {
+            animator.SetTrigger("Attack");
+        }
     }
     public void MoveToPlayer()
     {
