@@ -6,11 +6,14 @@ using System;
 
 public class PlayerController : MonoBehaviour
 {
+    private Player player;
+
     [Header("Movement")]
     public float moveSpeed;
     public float jumpPower;
     private Vector2 curMovementInput;
     public LayerMask groundLayerMask;
+    public bool isRunning;
 
     [Header("Look")]
     public Transform cameraContainer;
@@ -29,6 +32,8 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
+        player = GetComponent<Player>();
+
         Cursor.lockState = CursorLockMode.Locked;
     }
 
@@ -75,6 +80,20 @@ public class PlayerController : MonoBehaviour
         if (context.phase == InputActionPhase.Started && IsGrounded())
         {
             _rigidbody.AddForce(Vector2.up * jumpPower, ForceMode.Impulse);
+        }
+    }
+
+    public void OnRun(InputAction.CallbackContext context)
+    {
+        if (context.phase == InputActionPhase.Performed && player.condition.is_Tired == false)
+        {
+            isRunning = true;
+            moveSpeed = 8;
+        }
+        else if (context.phase == InputActionPhase.Canceled)
+        {
+            isRunning = false;
+            moveSpeed = 5;
         }
     }
 
