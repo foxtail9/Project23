@@ -36,8 +36,8 @@ public class Monster : MonoBehaviour
     public void MoveToPlayer()
     {
         Vector3 dir = (player.transform.position - transform.position).normalized;
-        transform.forward = dir;
         rgbd.velocity = dir * data.moveSpeed;
+        transform.forward = new Vector3(dir.x,0,dir.z).normalized;
     }
     public void TakeDamage(int damage )
     {
