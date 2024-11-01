@@ -524,6 +524,22 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 30d6cebb-a1f3-4dfc-8be1-cc637cd16c37
     m_ActionName: Player/Interaction[/Keyboard/e]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1565151259}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: OnRun
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 8cd7da29-04ab-43ec-8dd3-c1d57c95466c
+    m_ActionName: Player/New action
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -545,7 +561,8 @@ MonoBehaviour:
   maxValueHP: 100
   curValueStamina: 0
   maxValueStamina: 100
-  passiveValueStamina: 0
+  passiveValueStamina: 5
+  is_Tired: 0
 --- !u!1 &1804156623
 GameObject:
   m_ObjectHideFlags: 0
