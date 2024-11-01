@@ -84,6 +84,7 @@ public class Venom : Monster
             JumpTimes++;
             if (JumpTimes >= RequiredJumpTimes)
             {
+                SetState(AIState.DeadState);
                 animator.SetTrigger("Die");
             }
         }
