@@ -6,8 +6,18 @@ public class Monster : MonoBehaviour
 {
     public MonsterData data;
     public GameObject player;
-    Rigidbody rgbd;
-    Animator animator;
+    protected Rigidbody rgbd;
+    protected Animator animator;
+    protected int curHealth;
+
+    private void Awake()
+    {
+        rgbd = GetComponent<Rigidbody>();
+        animator = GetComponentInChildren<Animator>();
+        curHealth = data.health;
+    }
+
+
     public bool RecognizePlayer()
     {
         float distance = Vector3.Distance(player.transform.position,transform.position);
@@ -26,16 +36,17 @@ public class Monster : MonoBehaviour
         Vector3 dir = (player.transform.position - transform.position).normalized;
         transform.forward = dir;
         rgbd.velocity = dir * data.moveSpeed;
-        animator.SetBool("isWalk", true);
     }
-    public void TakeDamage()
+    public void TakeDamage(int damage )
     {
-
+        curHealth -= damage;
+        if (curHealth < 0) Die();
     }
 
-    private void Awake()
+    public void Die()
     {
-        rgbd = GetComponent<Rigidbody>();
-        animator = GetComponentInChildren<Animator>();
+        Destroy(gameObject);
     }
+
+   
 }
