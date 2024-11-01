@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ZombieData
   m_EditorClassIdentifier: 
   monsterName: "\uC880\uBE44"
-  moveSpeed: 3
+  moveSpeed: 2
   recognizeDistance: 10
   health: 30
   attackDamage: 5

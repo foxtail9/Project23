@@ -9,6 +9,8 @@ public class Monster : MonoBehaviour
     protected Rigidbody rgbd;
     protected Animator animator;
     protected int curHealth;
+    protected AIState aiState;
+
 
     private void Awake()
     {
@@ -40,13 +42,7 @@ public class Monster : MonoBehaviour
     public void TakeDamage(int damage )
     {
         curHealth -= damage;
-        if (curHealth < 0) Die();
+        if (curHealth <= 0) animator.SetTrigger("Die");
+        aiState = AIState.DeadState;
     }
-
-    public void Die()
-    {
-        Destroy(gameObject);
-    }
-
-   
 }

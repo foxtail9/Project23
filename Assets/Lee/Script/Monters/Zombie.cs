@@ -5,12 +5,12 @@ public enum AIState
 {
     AttackState,
     IdleState,
-    MoveState
+    MoveState,
+    DeadState
 }
 public class Zombie : Monster
 {
     private float lastAttackTime;
-    private AIState aiState;
     private float playerDistance;
 
     // Start is called before the first frame update
@@ -34,7 +34,9 @@ public class Zombie : Monster
                 break;
             case AIState.MoveState:
                 MoveUpdate();
-                break;                
+                break;
+            case AIState.DeadState:
+                break;
         }
         
     }
@@ -42,20 +44,7 @@ public class Zombie : Monster
     public void SetState(AIState state)
     {
         aiState = state;
-
-        switch (aiState)
-        {
-            case AIState.IdleState:
-                animator.SetBool("isWalk", aiState != AIState.IdleState);
-                break;
-            case AIState.AttackState:
-                animator.SetBool("isWalk", aiState != AIState.IdleState);
-                break;
-            case AIState.MoveState:
-                animator.SetBool("isWalk", aiState != AIState.IdleState);
-                MoveUpdate();
-                break;
-        }
+        animator.SetBool("isWalk", aiState != AIState.IdleState);
     }
 
     public void IdleUpdate()
