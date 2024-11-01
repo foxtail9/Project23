@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,7 +12,6 @@ public class PlayerConditions : MonoBehaviour
     public float maxValueStamina;
     public float passiveValueStamina;
     public bool is_Tired = false;
-
 
     // Start is called before the first frame update
     void Start()
@@ -56,7 +54,15 @@ public class PlayerConditions : MonoBehaviour
         parent += value;
         return parent;
     }
-
+    public bool OnJumpStaminaCost()
+    {
+        if(curValueStamina - 15f < 0)
+        {
+            return false;
+        }
+        curValueStamina = Subtract(curValueStamina, 15f);
+        return true;
+    }
     public float Subtract(float parent, float value)
     {
         parent -= value;

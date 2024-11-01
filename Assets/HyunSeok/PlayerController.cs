@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using System;
+using Unity.VisualScripting;
 
 public class PlayerController : MonoBehaviour
 {
     private Player player;
+    private PlayerConditions playerConditions;
 
     [Header("Movement")]
     public float moveSpeed;
@@ -27,6 +29,7 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
+        playerConditions = GetComponent<PlayerConditions>();
         _rigidbody = GetComponent<Rigidbody>();
     }
 
@@ -77,10 +80,12 @@ public class PlayerController : MonoBehaviour
 
     public void OnJump(InputAction.CallbackContext context)
     {
-        if (context.phase == InputActionPhase.Started && IsGrounded())
-        {
-            _rigidbody.AddForce(Vector2.up * jumpPower, ForceMode.Impulse);
-        }
+        if (playerConditions.OnJumpStaminaCost())
+            if (context.phase == InputActionPhase.Started && IsGrounded())
+            {
+                _rigidbody.AddForce(Vector2.up * jumpPower, ForceMode.Impulse);
+                playerConditions.OnJumpStaminaCost();
+            }
     }
 
     public void OnRun(InputAction.CallbackContext context)
