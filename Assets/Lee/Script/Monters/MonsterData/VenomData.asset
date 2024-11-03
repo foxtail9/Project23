@@ -16,6 +16,6 @@ MonoBehaviour:
   moveSpeed: 3
   recognizeDistance: 15
   health: 15
-  attackDamage: 2
-  attackDistance: 1
-  attackRate: 0.5
+  attackDamage: 3
+  attackDistance: 3
+  attackRate: 1
