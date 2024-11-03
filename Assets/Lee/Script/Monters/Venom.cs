@@ -8,11 +8,14 @@ public class Venom : Monster
     private float playerDistance;
     public int RequiredJumpTimes;
     private int JumpTimes = 0;
+    public GameObject playerSight;
+
 
 
     // Start is called before the first frame update
     void Start()
     {
+        playerSight = player.GetComponentInChildren<Camera>().transform.parent.gameObject;
         SetState(AIState.IdleState);
         // subscribes onjump event
     }
@@ -74,7 +77,8 @@ public class Venom : Monster
             // player takes damage
             Attack();
         }
-        transform.position = player.transform.position;
+        transform.rotation = Quaternion.Euler(90,player.transform.localEulerAngles.y,0);
+        transform.position = player.transform.position + (playerSight.transform.forward +player.transform.forward).normalized + new Vector3 (0,0.5f,0);
     }
 
     public void JumpOnHold()
