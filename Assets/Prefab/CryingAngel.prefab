@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7579827502266610187
+--- !u!1 &1963324775420047738
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,10 +8,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 9136604534241392303}
-  - component: {fileID: 7662775373884642545}
-  - component: {fileID: 6449882775799371943}
-  - component: {fileID: 8737708426652870272}
+  - component: {fileID: 6241525807044079562}
+  - component: {fileID: 7754463405280867849}
+  - component: {fileID: 8315620997168808292}
+  - component: {fileID: 2846319557821229577}
   m_Layer: 0
   m_Name: CryingAngel
   m_TagString: Untagged
@@ -19,29 +19,29 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &9136604534241392303
+--- !u!4 &6241525807044079562
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7579827502266610187}
+  m_GameObject: {fileID: 1963324775420047738}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.39, y: 1.73, z: 2.65}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8488078783248692869}
+  - {fileID: 1292443820651535076}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &7662775373884642545
+--- !u!54 &7754463405280867849
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7579827502266610187}
+  m_GameObject: {fileID: 1963324775420047738}
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
@@ -62,13 +62,13 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!65 &6449882775799371943
+--- !u!65 &8315620997168808292
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7579827502266610187}
+  m_GameObject: {fileID: 1963324775420047738}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -83,13 +83,13 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.4118743, y: 2.3512423, z: 1}
   m_Center: {x: 0.42368698, y: -0.10075939, z: 0}
---- !u!114 &8737708426652870272
+--- !u!114 &2846319557821229577
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7579827502266610187}
+  m_GameObject: {fileID: 1963324775420047738}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9784a458dafcada4999b6e60a33c790d, type: 3}
@@ -99,13 +99,13 @@ MonoBehaviour:
   player: {fileID: 0}
   conditions: {fileID: 0}
   playerSight: {fileID: 0}
---- !u!1001 &8488078783249002129
+--- !u!1001 &1292443820651315952
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 9136604534241392303}
+    m_TransformParent: {fileID: 6241525807044079562}
     m_Modifications:
     - target: {fileID: 181300, guid: a90ee9a0a54eeb2438f28f411e0a8f8d, type: 3}
       propertyPath: m_Name
@@ -168,8 +168,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a90ee9a0a54eeb2438f28f411e0a8f8d, type: 3}
---- !u!4 &8488078783248692869 stripped
+--- !u!4 &1292443820651535076 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 481300, guid: a90ee9a0a54eeb2438f28f411e0a8f8d, type: 3}
-  m_PrefabInstance: {fileID: 8488078783249002129}
+  m_PrefabInstance: {fileID: 1292443820651315952}
   m_PrefabAsset: {fileID: 0}
