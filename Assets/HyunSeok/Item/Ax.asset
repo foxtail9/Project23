@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Ax
   m_EditorClassIdentifier: 
   displayName: "\uB3C4\uB07C"
-  description: "\uADFC\uC811 \uBB34\uAE30\uC774"
+  description: "\uADFC\uC811 \uBB34\uAE30\uC774\uB2E4"
   type: 0
   icon: {fileID: 21300000, guid: 95d37bfcd33b56143aa868c3b456ecd9, type: 3}
   dropPrefab: {fileID: 6172435494010006162, guid: 2b2b3acfc18746b49a5f4460b32637a6, type: 3}

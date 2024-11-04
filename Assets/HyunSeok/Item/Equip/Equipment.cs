@@ -37,6 +37,7 @@ public class Equipment : MonoBehaviour
     {
         if(context.phase == InputActionPhase.Performed && curEquip != null && controller.canLook)
         {
+            Debug.Log("АјАн");
             curEquip.OnAttackInput();
         }
     }
