@@ -8670,6 +8670,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1417528418980651432, guid: 1e054ddfe8926c34784895042679ee6c, type: 3}
+      propertyPath: playerSight
+      value: 
+      objectReference: {fileID: 2062506669}
     - target: {fileID: 2511598119205289675, guid: 1e054ddfe8926c34784895042679ee6c, type: 3}
       propertyPath: m_Name
       value: Venom
@@ -10912,6 +10916,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CryingAngel
       objectReference: {fileID: 0}
+    - target: {fileID: 2846319557821229577, guid: 8a01c9e817d02fa498ef49009b560328, type: 3}
+      propertyPath: playerSight
+      value: 
+      objectReference: {fileID: 1906423607}
     - target: {fileID: 6241525807044079562, guid: 8a01c9e817d02fa498ef49009b560328, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.44213653
@@ -34916,6 +34924,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 906734113182415579, guid: 02526139cc32ab140b1b1f158ec04d48, type: 3}
+      propertyPath: playerConditions
+      value: 
+      objectReference: {fileID: 2062506671}
     - target: {fileID: 3042915491871905949, guid: 02526139cc32ab140b1b1f158ec04d48, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -39727,6 +39739,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1905814439}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!20 &1906423607 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 512615206323980877, guid: 93acb26d1cd2cad4880668a5c866a664, type: 3}
+  m_PrefabInstance: {fileID: 1619076354}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1907493251
 GameObject:
   m_ObjectHideFlags: 0
@@ -42638,6 +42655,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2058984563}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2062506669 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 172101618888484365, guid: 93acb26d1cd2cad4880668a5c866a664, type: 3}
+  m_PrefabInstance: {fileID: 1619076354}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2062506671 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3475819618651691359, guid: 93acb26d1cd2cad4880668a5c866a664, type: 3}
+  m_PrefabInstance: {fileID: 1619076354}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2062506669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b677d381171ba544815266503fdb526, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2064421099
 GameObject:
   m_ObjectHideFlags: 0
