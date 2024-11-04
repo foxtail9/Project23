@@ -6,6 +6,7 @@ public class Monster : MonoBehaviour
 {
     public MonsterData data;
     public GameObject player;
+    public PlayerConditions conditions;
     protected Rigidbody rgbd;
     protected Animator animator;
     protected int curHealth;
@@ -16,6 +17,7 @@ public class Monster : MonoBehaviour
     {
         rgbd = GetComponent<Rigidbody>();
         animator = GetComponentInChildren<Animator>();
+        conditions = player.GetComponent<PlayerConditions>();
         curHealth = data.health;
     }
 
@@ -30,6 +32,7 @@ public class Monster : MonoBehaviour
         float distance = Vector3.Distance(player.transform.position, transform.position);
         if (distance <= data.attackDistance)
         {
+            conditions.curValueHP -= data.attackDamage; 
             animator.SetTrigger("Attack");
         }
     }

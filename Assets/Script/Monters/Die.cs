@@ -7,6 +7,5 @@ public class Die : MonoBehaviour
 
     public void Dead()
     {
-        Destroy(transform.parent.gameObject);
     }
 }
