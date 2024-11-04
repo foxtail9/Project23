@@ -6,7 +6,6 @@ using UnityEngine.InputSystem;
 public class Venom : Monster
 {
     private float lastAttackTime;
-    private float playerDistance;
     public int RequiredJumpTimes;
     public int JumpTimes = 0;
     public GameObject playerSight;
