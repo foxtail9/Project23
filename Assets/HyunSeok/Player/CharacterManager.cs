@@ -26,6 +26,7 @@ public class CharacterManager : MonoBehaviour
 
     private void Awake()
     {
+        Time.timeScale = 1;
         if (_instance == null)
         {
             _instance = this;

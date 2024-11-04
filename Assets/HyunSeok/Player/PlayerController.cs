@@ -6,8 +6,6 @@ using System;
 
 public class PlayerController : MonoBehaviour
 {
-    private Player player;
-
     [Header("Movement")]
     public float moveSpeed;
     public float jumpPower;
@@ -32,8 +30,6 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
-        player = GetComponent<Player>();
-
         Cursor.lockState = CursorLockMode.Locked;
     }
 
@@ -85,7 +81,7 @@ public class PlayerController : MonoBehaviour
 
     public void OnRun(InputAction.CallbackContext context)
     {
-        if (context.phase == InputActionPhase.Performed && player.condition.is_Tired == false)
+        if (context.phase == InputActionPhase.Performed && CharacterManager.Instance.Player.condition.is_Tired == false)
         {
             isRunning = true;
             moveSpeed = 8;
@@ -94,6 +90,37 @@ public class PlayerController : MonoBehaviour
         {
             isRunning = false;
             moveSpeed = 5;
+        }
+    }
+
+    public void OnEquipInventory(InputAction.CallbackContext context)
+    {
+        if(context.performed)
+        {
+            if (context.control.name == "1")
+                Equip(0);
+            else if (context.control.name == "2")
+                Equip(1);
+            else if (context.control.name == "3")
+                Equip(2);
+            else if (context.control.name == "4")
+                Equip(3);
+        }
+    }
+
+    void Equip(int input)
+    {
+        for(int i=0; i< CharacterManager.Instance.Player.equipInventory.slots.Length; i++)
+        {
+            CharacterManager.Instance.Player.equipInventory.slots[i].outline.enabled = false;
+        }
+
+        if (CharacterManager.Instance.Player.equipInventory.slots[input].item != null)
+        {
+            Debug.Log($"{input}번째 아이템 장착");
+            CharacterManager.Instance.Player.equipment.UnEquip();
+            CharacterManager.Instance.Player.equipment.EquipNew(CharacterManager.Instance.Player.equipInventory.slots[input].item);
+            CharacterManager.Instance.Player.equipInventory.slots[input].outline.enabled = true;
         }
     }
 

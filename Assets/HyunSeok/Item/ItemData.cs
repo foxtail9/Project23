@@ -35,6 +35,10 @@ public class ItemData : ScriptableObject
 
     public int price;
 
+    [Header("Equiping")]
+    public bool cnaEquip;//장착가능한
+    public GameObject equipPrefab;
+
     [Header("Stacking")]
     public bool canStack;//여러개 획득 가능한지
     public int maxStackAmount;//몇개까지 획득가능한지

@@ -7,8 +7,12 @@ public class Player : MonoBehaviour
 {
     public PlayerController controller;
     public PlayerConditions condition;
+    public EquipInventory equipInventory;
+    public Equipment equipment;
 
     public ItemData itemData;
+
+    public Action addEquip;
     public Action addItem;
 
     private void Awake()
@@ -16,5 +20,6 @@ public class Player : MonoBehaviour
         CharacterManager.Instance.Player = this;
         controller = GetComponent<PlayerController>();
         condition = GetComponent<PlayerConditions>();
+        equipment = GetComponent<Equipment>();
     }
 }
