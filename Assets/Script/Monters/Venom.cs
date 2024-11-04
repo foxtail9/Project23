@@ -13,8 +13,9 @@ public class Venom : Monster
 
 
     // Start is called before the first frame update
-    void Start()
+    public override void Start()
     {
+        base.Start();
         playerSight = player.GetComponentInChildren<Camera>().transform.parent.gameObject;
         SetState(AIState.IdleState);
         // subscribes onjump event

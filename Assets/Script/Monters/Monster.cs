@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Monster : MonoBehaviour
 {
     public MonsterData data;
-    public GameObject player;
-    public PlayerConditions conditions;
+    protected GameObject player;
+    protected PlayerConditions conditions;
     protected Rigidbody rgbd;
     protected Animator animator;
     protected int curHealth;
@@ -17,8 +18,13 @@ public class Monster : MonoBehaviour
     {
         rgbd = GetComponent<Rigidbody>();
         animator = GetComponentInChildren<Animator>();
+        curHealth = data.health;      
+    }
+
+    public virtual void Start()
+    {
+        player = GameManager.Instance.Player.gameObject;
         conditions = player.GetComponent<PlayerConditions>();
-        curHealth = data.health;
     }
 
 

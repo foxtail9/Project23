@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -8,7 +9,8 @@ public class GameTime : MonoBehaviour
     private float gameWorldTime;
     private float realTimeElapsed;
     private const float TimeIncrement = 0.25f;
-    private const float RealMinute = 60f; 
+    private const float RealMinute = 60f;
+    
 
     [SerializeField]
     private TextMeshProUGUI timeText;
@@ -39,6 +41,10 @@ public class GameTime : MonoBehaviour
     private void IncrementGameWorldTime()
     {
         gameWorldTime += TimeIncrement;
+        if (gameWorldTime >= GameManager.Instance.monsterSpawnTime)
+        {
+            // TODO : 
+        }
 
         // 게임 월드 시간이 24시간을 초과하지 않도록 조정
         if (gameWorldTime >= 24f)

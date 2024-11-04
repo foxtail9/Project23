@@ -14,8 +14,9 @@ public class Zombie : Monster
     private float playerDistance;
 
     // Start is called before the first frame update
-    void Start()
+    public override void Start()
     {
+        base.Start();
         SetState(AIState.IdleState);
     }
 
