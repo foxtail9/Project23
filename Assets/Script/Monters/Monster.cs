@@ -31,7 +31,12 @@ public class Monster : MonoBehaviour
     public bool RecognizePlayer()
     {
         float distance = Vector3.Distance(player.transform.position,transform.position);
-        return distance <= data.recognizeDistance;
+        bool recognize = distance <= data.recognizeDistance;
+        if (recognize)
+        {
+            //player.condition.curMental -= data.mentalDamage * Time.deltaTime;
+        }
+        return recognize;
     }
     public void Attack()
     {

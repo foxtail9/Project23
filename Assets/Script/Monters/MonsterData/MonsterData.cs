@@ -16,6 +16,7 @@ public class MonsterData : ScriptableObject
     public float attackDamage;
     public float attackDistance;
     public float attackRate;
+    public float mentalDamage;
 
     
 }
