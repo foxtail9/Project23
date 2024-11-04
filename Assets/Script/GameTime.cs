@@ -41,9 +41,14 @@ public class GameTime : MonoBehaviour
     private void IncrementGameWorldTime()
     {
         gameWorldTime += TimeIncrement;
-        if (gameWorldTime >= GameManager.Instance.monsterSpawnTime)
+        if (gameWorldTime == GameManager.Instance.monsterSpawnTime)
         {
             // TODO : 
+        }
+
+        if (gameWorldTime == GameManager.Instance.monsterDamageTime)
+        {
+            GameManager.Instance.monsterDamageRate = 2;
         }
 
         // 게임 월드 시간이 24시간을 초과하지 않도록 조정
@@ -86,6 +91,7 @@ public class GameTime : MonoBehaviour
     private void Awake()
     {
         SetGameWorldTime(7f);
+        GameManager.Instance.monsterDamageRate = 1;
     }
 
     void Update()

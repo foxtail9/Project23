@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public float monsterSpawnTime;
     public float monsterDamageTime;
+    public int monsterDamageRate = 1;
 
     private static GameManager _instance;
     public static GameManager Instance
@@ -43,15 +44,5 @@ public class GameManager : MonoBehaviour
                 Destroy(gameObject);
             }
         }
-    }
-
-    public void ExtraMonsterSpawn()
-    {
-
-    }
-
-    public void MonsterDamageEnhance()
-    {
-
     }
 }

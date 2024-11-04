@@ -38,7 +38,7 @@ public class Monster : MonoBehaviour
         float distance = Vector3.Distance(player.transform.position, transform.position);
         if (distance <= data.attackDistance)
         {
-            conditions.curValueHP -= data.attackDamage; 
+            conditions.curValueHP -= data.attackDamage * GameManager.Instance.monsterDamageRate; 
             animator.SetTrigger("Attack");
         }
     }
