@@ -248,6 +248,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monsterSpawnTime: 0
   monsterDamageTime: 0
+  monsterDamageRate: 1
   _player: {fileID: 0}
 --- !u!4 &1035067404
 Transform:
@@ -321,7 +322,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93acb26d1cd2cad4880668a5c866a664, type: 3}
---- !u!1001 &1319357400
+--- !u!1001 &1481081780
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -329,55 +330,55 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7666345936052045020, guid: ff2f3539a79f5544c8a1d6961ba27f58, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -7.76
+    - target: {fileID: 2511598119205289675, guid: 1e054ddfe8926c34784895042679ee6c, type: 3}
+      propertyPath: m_Name
+      value: Venom
       objectReference: {fileID: 0}
-    - target: {fileID: 7666345936052045020, guid: ff2f3539a79f5544c8a1d6961ba27f58, type: 3}
+    - target: {fileID: 6225277264014974943, guid: 1e054ddfe8926c34784895042679ee6c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225277264014974943, guid: 1e054ddfe8926c34784895042679ee6c, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7666345936052045020, guid: ff2f3539a79f5544c8a1d6961ba27f58, type: 3}
+    - target: {fileID: 6225277264014974943, guid: 1e054ddfe8926c34784895042679ee6c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.03
+      value: -2.36
       objectReference: {fileID: 0}
-    - target: {fileID: 7666345936052045020, guid: ff2f3539a79f5544c8a1d6961ba27f58, type: 3}
+    - target: {fileID: 6225277264014974943, guid: 1e054ddfe8926c34784895042679ee6c, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.9998939
       objectReference: {fileID: 0}
-    - target: {fileID: 7666345936052045020, guid: ff2f3539a79f5544c8a1d6961ba27f58, type: 3}
+    - target: {fileID: 6225277264014974943, guid: 1e054ddfe8926c34784895042679ee6c, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: 0.013955531
       objectReference: {fileID: 0}
-    - target: {fileID: 7666345936052045020, guid: ff2f3539a79f5544c8a1d6961ba27f58, type: 3}
+    - target: {fileID: 6225277264014974943, guid: 1e054ddfe8926c34784895042679ee6c, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.003776361
       objectReference: {fileID: 0}
-    - target: {fileID: 7666345936052045020, guid: ff2f3539a79f5544c8a1d6961ba27f58, type: 3}
+    - target: {fileID: 6225277264014974943, guid: 1e054ddfe8926c34784895042679ee6c, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: 0.0017975044
       objectReference: {fileID: 0}
-    - target: {fileID: 7666345936052045020, guid: ff2f3539a79f5544c8a1d6961ba27f58, type: 3}
+    - target: {fileID: 6225277264014974943, guid: 1e054ddfe8926c34784895042679ee6c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: 1.6
       objectReference: {fileID: 0}
-    - target: {fileID: 7666345936052045020, guid: ff2f3539a79f5544c8a1d6961ba27f58, type: 3}
+    - target: {fileID: 6225277264014974943, guid: 1e054ddfe8926c34784895042679ee6c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -0.43
       objectReference: {fileID: 0}
-    - target: {fileID: 7666345936052045020, guid: ff2f3539a79f5544c8a1d6961ba27f58, type: 3}
+    - target: {fileID: 6225277264014974943, guid: 1e054ddfe8926c34784895042679ee6c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8678226923679156110, guid: ff2f3539a79f5544c8a1d6961ba27f58, type: 3}
-      propertyPath: m_Name
-      value: Zombie
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ff2f3539a79f5544c8a1d6961ba27f58, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 1e054ddfe8926c34784895042679ee6c, type: 3}
 --- !u!1 &2094560651
 GameObject:
   m_ObjectHideFlags: 0
@@ -491,5 +492,5 @@ SceneRoots:
   - {fileID: 491146454}
   - {fileID: 2094560655}
   - {fileID: 1098460347}
-  - {fileID: 1319357400}
   - {fileID: 1035067404}
+  - {fileID: 1481081780}
