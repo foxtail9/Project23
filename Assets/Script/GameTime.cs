@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class GameTime : MonoBehaviour
 {
+    public static int startTime;  //신컨트롤러에서 받아오며 7이면 am7시이고 21이면 pm9시입니다.
+
     private float gameWorldTime;
     private float realTimeElapsed;
     private const float TimeIncrement = 0.25f;
