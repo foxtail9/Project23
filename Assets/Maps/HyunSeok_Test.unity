@@ -313,7 +313,7 @@ MonoBehaviour:
   item: {fileID: 0}
   inventory: {fileID: 0}
   index: 0
-  icon: {fileID: 0}
+  icon: {fileID: 276898105}
   outline: {fileID: 0}
 --- !u!1 &328418969
 GameObject:
@@ -1796,6 +1796,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 8cd7da29-04ab-43ec-8dd3-c1d57c95466c
     m_ActionName: Player/New action
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1565151259}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: OnEquipInventory
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: c21d5141-fb74-4ce8-bb3f-1493557c1ce5
+    m_ActionName: Player/New action
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -2076,7 +2092,7 @@ MonoBehaviour:
   item: {fileID: 0}
   inventory: {fileID: 0}
   index: 0
-  icon: {fileID: 0}
+  icon: {fileID: 1703925152}
   outline: {fileID: 0}
 --- !u!1 &1804156623
 GameObject:
@@ -2380,7 +2396,7 @@ MonoBehaviour:
   item: {fileID: 0}
   inventory: {fileID: 0}
   index: 0
-  icon: {fileID: 0}
+  icon: {fileID: 2011524127}
   outline: {fileID: 0}
 --- !u!1001 &2086597632
 PrefabInstance:
@@ -2546,7 +2562,7 @@ MonoBehaviour:
   item: {fileID: 0}
   inventory: {fileID: 0}
   index: 0
-  icon: {fileID: 0}
+  icon: {fileID: 2141004861}
   outline: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
