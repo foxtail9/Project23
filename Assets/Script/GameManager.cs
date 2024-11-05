@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -8,6 +9,8 @@ public class GameManager : MonoBehaviour
     public float monsterDamageTime;
     public int monsterDamageRate = 1;
     public int money = 0;
+    public int dayCount = 1;
+    public TextMeshProUGUI daytext;
 
     private static GameManager _instance;
     public static GameManager Instance
@@ -30,18 +33,16 @@ public class GameManager : MonoBehaviour
     }
 
     public UIInventory inventory;
-
     public UIInventory Inventory
     {
         get { return inventory; }
         set { inventory = value; }
     }
 
-
-
-    // Update is called once per frame
     void Awake()
     {
+        daytext = GameObject.Find("Day").GetComponent<TextMeshProUGUI>();
+        daytext.text = $"{dayCount}Day";
         Time.timeScale = 1;
         if (_instance == null)
         {
@@ -56,4 +57,6 @@ public class GameManager : MonoBehaviour
             }
         }
     }
+
+
 }
