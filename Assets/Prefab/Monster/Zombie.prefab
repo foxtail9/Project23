@@ -97,14 +97,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data: {fileID: 11400000, guid: fd7359635a17d164b93044afe20365b3, type: 2}
-  sounds:
+  idleSounds:
   - {fileID: 8300000, guid: 27b98a8c68f991b408c5c6afff25358c, type: 3}
+  - {fileID: 8300000, guid: bdb798b20d5ac2f438f3a562f4150019, type: 3}
   - {fileID: 8300000, guid: 821b6440d8e269c40b5a0eb8a44a079d, type: 3}
   - {fileID: 8300000, guid: d108e9ae3908d4d479e1e41cca0188a3, type: 3}
-  - {fileID: 8300000, guid: ff8240148ee026c4babb53949381e1cd, type: 3}
+  moveSounds:
+  - {fileID: 8300000, guid: 5ce6bb262e363834db2b5cdef8a21155, type: 3}
   attackSound: {fileID: 8300000, guid: 4fb45f9472f5e554c82a5a9c7ba4c739, type: 3}
-  minTimeBetweenSounds: 2
-  maxTimeBetweenSounds: 3
 --- !u!82 &1520202161087928116
 AudioSource:
   m_ObjectHideFlags: 0
@@ -117,7 +117,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.3
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -125,8 +125,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 0.1
-  MaxDistance: 1.5
+  MinDistance: 0.01
+  MaxDistance: 0.3
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0

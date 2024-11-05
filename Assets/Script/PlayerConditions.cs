@@ -68,11 +68,11 @@ public class PlayerConditions : MonoBehaviour
     }
     public bool OnJumpStaminaCost()
     {
-        if(curValueStamina - 15f < 0)
+        if(curValueStamina - 8f < 0)
         {
             return false;
         }
-        curValueStamina = Subtract(curValueStamina, 15f);
+        curValueStamina = Subtract(curValueStamina, 8f);
         return true;
     }
     public float Subtract(float parent, float value)
