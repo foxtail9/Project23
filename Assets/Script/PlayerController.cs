@@ -7,8 +7,6 @@ using Unity.VisualScripting;
 
 public class PlayerController : MonoBehaviour
 {
-    private Player player;
-    private PlayerConditions playerConditions;
     public event Action<InputAction.CallbackContext> JumpEvent;
 
     [Header("Movement")]
@@ -30,13 +28,11 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
-        playerConditions = GetComponent<PlayerConditions>();
         _rigidbody = GetComponent<Rigidbody>();
     }
 
     private void Start()
     {
-        player = GetComponent<Player>();
         Cursor.lockState = CursorLockMode.Locked;
     }
 
@@ -80,11 +76,11 @@ public class PlayerController : MonoBehaviour
 
     public void OnJump(InputAction.CallbackContext context)
     {
-        if (playerConditions.OnJumpStaminaCost())
+        if (GameManager.Instance.Player.condition.OnJumpStaminaCost())
             if (context.phase == InputActionPhase.Started && IsGrounded())
             {
                 _rigidbody.AddForce(Vector2.up * jumpPower, ForceMode.Impulse);
-                playerConditions.OnJumpStaminaCost();
+                GameManager.Instance.Player.condition.OnJumpStaminaCost();
                 JumpEvent?.Invoke(context);
             }
         
@@ -92,7 +88,7 @@ public class PlayerController : MonoBehaviour
 
     public void OnRun(InputAction.CallbackContext context)
     {
-        if (context.phase == InputActionPhase.Performed && player.condition.is_Tired == false)
+        if (context.phase == InputActionPhase.Performed && GameManager.Instance.Player.condition.is_Tired == false)
         {
             isRunning = true;
             moveSpeed = 8;
