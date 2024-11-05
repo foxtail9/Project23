@@ -22,12 +22,18 @@ public class UIInventory : MonoBehaviour
 
     ItemData selectedItem;
     int selectedItemIndex = 0;
+
+    private void Awake()
+    {
+        GameManager.Instance.Inventory = this;
+    }
     // Start is called before the first frame update
     void Start()
     {
         controller = GameManager.Instance.Player.controller;
         conditions = GameManager.Instance.Player.condition;
         dropPos = GameManager.Instance.Player.dropPos;
+        
 
         controller.UiInventory += Toggle;
         GameManager.Instance.Player.addItem += AddItem;
@@ -86,7 +92,7 @@ public class UIInventory : MonoBehaviour
         GameManager.Instance.Player.itemData = null;
     }
 
-    void UpdateUI()
+    public void UpdateUI()
     {
         for (int i = 0; i < slots.Length; i++)
         {
