@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75c1ad5b42f63b64585ea95a1bb8f910, type: 3}
+  m_Name: Flash
+  m_EditorClassIdentifier: 
+  displayName: "\uC190\uC804\uB4F1"
+  description: "\uBE5B\uC744 \uBC1D\uD790 \uC218 \uC788\uB294 \uC190\uC804\uB4F1\uC774\uB2E4."
+  type: 0
+  icon: {fileID: 21300000, guid: 4eb85e152c881644991505a87f8c24e1, type: 3}
+  dropPrefab: {fileID: 5067661307137071945, guid: f23bf10b0ab137941ae1fcdd340ac0ee, type: 3}
+  price: 0
+  cnaEquip: 1
+  equipPrefab: {fileID: 5875984055925047515, guid: aedc15e5cc5214e4f91084f7c30b3054, type: 3}
+  canStack: 0
+  maxStackAmount: 0
+  consumables: []
