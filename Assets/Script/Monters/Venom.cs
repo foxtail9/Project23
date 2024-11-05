@@ -3,14 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Venom : Monster, IMonsterSound // Monster Å¬·¡½º¸¦ »ó¼Ó¹Þ°í ÀÎÅÍÆäÀÌ½º ±¸Çö
+public class Venom : Monster, IMonsterSound
 {
     private float lastAttackTime;
-    public int RequiredJumpTimes = 3;
+    public int RequiredJumpTimes;
     public int JumpTimes = 0;
     public GameObject playerSight;
-
-    // »ç¿îµå Å¬¸³ Á¤ÀÇ
     public AudioClip[] idleSounds; // Idle »óÅÂ »ç¿îµå Å¬¸³ ¹è¿­
     public AudioClip[] moveSounds; // Move »óÅÂ »ç¿îµå Å¬¸³ ¹è¿­
     public AudioClip attackSound;   // °ø°Ý »ç¿îµå Å¬¸³
@@ -18,6 +16,8 @@ public class Venom : Monster, IMonsterSound // Monster Å¬·¡½º¸¦ »ó¼Ó¹Þ°í ÀÎÅÍÆäÀ
     private AudioSource audioSource; // AudioSource ÄÄÆ÷³ÍÆ®
     private Coroutine soundCoroutine; // Idle ¶Ç´Â Move »ç¿îµå Àç»ý ÄÚ·çÆ¾
 
+
+    // Start is called before the first frame update
     public override void Start()
     {
         base.Start();
@@ -46,13 +46,13 @@ public class Venom : Monster, IMonsterSound // Monster Å¬·¡½º¸¦ »ó¼Ó¹Þ°í ÀÎÅÍÆäÀ
             case AIState.DeadState:
                 break;
         }
+
     }
 
     public void SetState(AIState state)
     {
         aiState = state;
         animator.SetBool("isWalk", aiState != AIState.IdleState);
-
         // »óÅÂ¿¡ µû¶ó »ç¿îµå ÄÚ·çÆ¾ ½ÃÀÛ ¶Ç´Â ÁßÁö
         if (aiState == AIState.IdleState || aiState == AIState.MoveState)
         {
@@ -88,7 +88,7 @@ public class Venom : Monster, IMonsterSound // Monster Å¬·¡½º¸¦ »ó¼Ó¹Þ°í ÀÎÅÍÆäÀ
         }
         else if (playerDistance < data.attackDistance)
         {
-            AttackUpdate();
+            SetState(AIState.AttackState);
         }
     }
 
@@ -119,7 +119,6 @@ public class Venom : Monster, IMonsterSound // Monster Å¬·¡½º¸¦ »ó¼Ó¹Þ°í ÀÎÅÍÆäÀ
         }
     }
 
-    // Idle ¶Ç´Â Move »ç¿îµå Àç»ý ÄÚ·çÆ¾
     private IEnumerator PlaySounds()
     {
         while (aiState == AIState.IdleState || aiState == AIState.MoveState)
@@ -133,7 +132,7 @@ public class Venom : Monster, IMonsterSound // Monster Å¬·¡½º¸¦ »ó¼Ó¹Þ°í ÀÎÅÍÆäÀ
                 PlayMoveSound(moveSounds); // Move »óÅÂ »ç¿îµå Àç»ý
             }
 
-            yield return new WaitForSeconds(1.7f); // 5ÃÊ °£°ÝÀ¸·Î ¹Ýº¹ (ÇÊ¿ä¿¡ µû¶ó Á¶Á¤ °¡´É)
+            yield return new WaitForSeconds(5f); // 5ÃÊ °£°ÝÀ¸·Î ¹Ýº¹ (ÇÊ¿ä¿¡ µû¶ó Á¶Á¤ °¡´É)
         }
     }
 
