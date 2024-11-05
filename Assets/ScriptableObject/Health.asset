@@ -15,9 +15,10 @@ MonoBehaviour:
   displayName: "\uD68C\uBCF5"
   description: "\uCCB4\uB825\uC744 \uD68C\uBCF5\uD574\uC904\uC218 \uC788\uB2E4"
   type: 0
-  icon: {fileID: 21300000, guid: c34e8d31056d00147a668ee375f1aedb, type: 3}
+  icon: {fileID: 21300000, guid: 71953d590bd3b2a4982291cf0ae09bb1, type: 3}
   dropPrefab: {fileID: 3412188540623253364, guid: afb455eac00ab1b418d10e2780e62eb2, type: 3}
-  price: 0
+  buyPrice: 30
+  sellPrice: 0
   cnaEquip: 1
   equipPrefab: {fileID: 9049729809233244913, guid: 00ad3a1dc4da47648a89028b3bdaf6fa, type: 3}
   canStack: 0

@@ -10,17 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 75c1ad5b42f63b64585ea95a1bb8f910, type: 3}
-  m_Name: Projector
+  m_Name: Horn
   m_EditorClassIdentifier: 
-  displayName: "\uC601\uC0AC\uAE30"
-  description: "\uACFC\uAC70\uC5D0 \uC0AC\uC6A9\uD588\uB358 \uC601\uC0AC\uAE30\uB2E4"
+  displayName: "\uC0AC\uC2B4\uBFD4"
+  description: "\uBCF4\uAE30\uC5D0 \uC608\uC058\uB2E4."
   type: 2
-  icon: {fileID: 21300000, guid: 8503cb9ad0e716240b521834fccbea3f, type: 3}
-  dropPrefab: {fileID: 4586451593935500804, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+  icon: {fileID: 21300000, guid: 7a4cfaf3c6f66d448b242d2802cae56d, type: 3}
+  dropPrefab: {fileID: 872019708291256848, guid: 64b34e0eab5ea754d9bb73ba9cb66c62, type: 3}
   buyPrice: 0
-  sellPrice: 200
+  sellPrice: 80
   cnaEquip: 0
   equipPrefab: {fileID: 0}
-  canStack: 0
-  maxStackAmount: 0
   consumables: []
