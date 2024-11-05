@@ -1,10 +1,13 @@
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
+public interface IDamagable
+{
+    void TakePhysicalDamage(int damageAmount);
+}
 public class PlayerConditions : MonoBehaviour
 {
-    private Player player;
-
     public float curValueHP;
     public float maxValueHP;
 
@@ -13,11 +16,15 @@ public class PlayerConditions : MonoBehaviour
     public float passiveValueStamina;
     public bool is_Tired = false;
 
+    public float curValueMental;
+    public float maxValueMental;
+
+    public GameObject gameOver;
+    public event Action onTakeDamage;
+
     // Start is called before the first frame update
     void Start()
     {
-        player = GetComponent<Player>();
-
         curValueHP = maxValueHP;
         curValueStamina = maxValueStamina;
     }
@@ -27,7 +34,7 @@ public class PlayerConditions : MonoBehaviour
         if (curValueStamina < maxValueStamina)
             curValueStamina = Add(curValueStamina, passiveValueStamina * Time.deltaTime);
 
-        if(player.controller.isRunning == true)
+        if(GameManager.Instance.Player.controller.isRunning == true)
             curValueStamina = Subtract(curValueStamina, passiveValueStamina * 5 * Time.deltaTime);
     }
 
@@ -38,8 +45,13 @@ public class PlayerConditions : MonoBehaviour
             Debug.Log("달릴수 없다.");
             Invoke("Tired_End",3f);
             is_Tired = true;
-            player.controller.isRunning = false;
-            player.controller.moveSpeed = 5;
+            GameManager.Instance.Player.controller.isRunning = false;
+            GameManager.Instance.Player.controller.moveSpeed = 5;
+        }
+
+        if (curValueHP <= 0)
+        {
+            Die_Page();
         }
     }
 
@@ -67,5 +79,19 @@ public class PlayerConditions : MonoBehaviour
     {
         parent -= value;
         return parent;
+    }
+
+    public void Die_Page()
+    {
+        gameOver.SetActive(true);
+        GameManager.Instance.Player.controller.canLook = false;
+        Time.timeScale = 0;
+        Debug.Log("플레이어가 죽었다.");
+    }
+
+    public void TakePhysicalDamage(int damageAmount)
+    {
+        Subtract(curValueHP, damageAmount);
+        onTakeDamage?.Invoke();
     }
 }

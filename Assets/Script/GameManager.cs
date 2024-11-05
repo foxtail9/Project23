@@ -32,6 +32,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Awake()
     {
+        Time.timeScale = 1;
         if (_instance == null)
         {
             _instance = this;
