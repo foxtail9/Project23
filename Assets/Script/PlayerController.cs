@@ -7,8 +7,6 @@ using Unity.VisualScripting;
 
 public class PlayerController : MonoBehaviour
 {
-    private Player player;
-    private PlayerConditions playerConditions;
     public event Action<InputAction.CallbackContext> JumpEvent;
 
     [Header("Movement")]
@@ -30,13 +28,11 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
-        playerConditions = GetComponent<PlayerConditions>();
         _rigidbody = GetComponent<Rigidbody>();
     }
 
     private void Start()
     {
-        player = GetComponent<Player>();
         Cursor.lockState = CursorLockMode.Locked;
     }
 
@@ -80,11 +76,11 @@ public class PlayerController : MonoBehaviour
 
     public void OnJump(InputAction.CallbackContext context)
     {
-        if (playerConditions.OnJumpStaminaCost())
+        if (GameManager.Instance.Player.condition.OnJumpStaminaCost())
             if (context.phase == InputActionPhase.Started && IsGrounded())
             {
                 _rigidbody.AddForce(Vector2.up * jumpPower, ForceMode.Impulse);
-                playerConditions.OnJumpStaminaCost();
+                GameManager.Instance.Player.condition.OnJumpStaminaCost();
                 JumpEvent?.Invoke(context);
             }
         
@@ -92,7 +88,7 @@ public class PlayerController : MonoBehaviour
 
     public void OnRun(InputAction.CallbackContext context)
     {
-        if (context.phase == InputActionPhase.Performed && player.condition.is_Tired == false)
+        if (context.phase == InputActionPhase.Performed && GameManager.Instance.Player.condition.is_Tired == false)
         {
             isRunning = true;
             moveSpeed = 8;
@@ -101,6 +97,37 @@ public class PlayerController : MonoBehaviour
         {
             isRunning = false;
             moveSpeed = 5;
+        }
+    }
+
+    public void OnEquipInventory(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            if (context.control.name == "1")
+                Equip(0);
+            else if (context.control.name == "2")
+                Equip(1);
+            else if (context.control.name == "3")
+                Equip(2);
+            else if (context.control.name == "4")
+                Equip(3);
+        }
+    }
+
+    void Equip(int input)
+    {
+        for (int i = 0; i < GameManager.Instance.Player.equipInventory.slots.Length; i++)
+        {
+            GameManager.Instance.Player.equipInventory.slots[i].outline.enabled = false;
+        }
+
+        if (GameManager.Instance.Player.equipInventory.slots[input].item != null)
+        {
+            Debug.Log($"{input}번째 아이템 장착");
+            GameManager.Instance.Player.equipment.UnEquip();
+            GameManager.Instance.Player.equipment.EquipNew(GameManager.Instance.Player.equipInventory.slots[input].item);
+            GameManager.Instance.Player.equipInventory.slots[input].outline.enabled = true;
         }
     }
 
