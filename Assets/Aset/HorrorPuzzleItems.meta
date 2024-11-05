@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Aset/HorrorPuzzleItems.meta
 guid: f86aed4b351c09d4fb12c16703c040e1
+========
+guid: 6b1c185186c88a8448e4446ce1f4a317
+>>>>>>>> main:Assets/Prefab/Equip.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

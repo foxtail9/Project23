@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour
     private Vector2 mouseDelta;
     public bool canLook = true;
 
+    public Action UiInventory;
     private Rigidbody _rigidbody;
 
     private void Awake()
@@ -97,6 +98,53 @@ public class PlayerController : MonoBehaviour
         {
             isRunning = false;
             moveSpeed = 5;
+        }
+    }
+
+    public void OnInventoryButton(InputAction.CallbackContext callbackContext)
+    {
+        if (callbackContext.phase == InputActionPhase.Started)
+        {
+            UiInventory?.Invoke();
+            ToggleCursor();
+        }
+    }
+
+    void ToggleCursor()
+    {
+        bool toggle = Cursor.lockState == CursorLockMode.Locked;
+        Cursor.lockState = toggle ? CursorLockMode.None : CursorLockMode.Locked;
+        canLook = !toggle;
+    }
+
+    public void OnEquipInventory(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            if (context.control.name == "1")
+                Equip(0);
+            else if (context.control.name == "2")
+                Equip(1);
+            else if (context.control.name == "3")
+                Equip(2);
+            else if (context.control.name == "4")
+                Equip(3);
+        }
+    }
+
+    void Equip(int input)
+    {
+        for (int i = 0; i < GameManager.Instance.Player.equipInventory.slots.Length; i++)
+        {
+            GameManager.Instance.Player.equipInventory.slots[i].outline.enabled = false;
+        }
+
+        if (GameManager.Instance.Player.equipInventory.slots[input].item != null)
+        {
+            Debug.Log($"{input}번째 아이템 장착");
+            GameManager.Instance.Player.equipment.UnEquip();
+            GameManager.Instance.Player.equipment.EquipNew(GameManager.Instance.Player.equipInventory.slots[input].item);
+            GameManager.Instance.Player.equipInventory.slots[input].outline.enabled = true;
         }
     }
 

@@ -14,6 +14,8 @@ public class Player : MonoBehaviour
 
     public Action addEquip;
     public Action addItem;
+
+    public Transform dropPos;
     private void Awake()
     {
         GameManager.Instance.Player = this;

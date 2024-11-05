@@ -15,8 +15,8 @@ public class ItemObject : MonoBehaviour, IInteractable
     public string GetInteractPrompt()
     {
         string str = $"{data.displayName}\n{data.description}";
-        if (data.price > 0)
-            str += $"\n{data.price}$";
+        if (data.buyPrice > 0)
+            str += $"\n{data.buyPrice}$";
         return str;
     }
 
