@@ -6,7 +6,6 @@ using static UnityEngine.GraphicsBuffer;
 public class CryingAngel : Monster
 {
     private float lastAttackTime;
-    private float playerDistance;
     public Camera playerSight;
 
     // Start is called before the first frame update

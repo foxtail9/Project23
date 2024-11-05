@@ -11,7 +11,6 @@ public enum AIState
 public class Zombie : Monster
 {
     private float lastAttackTime;
-    private float playerDistance;
 
     // Start is called before the first frame update
     public override void Start()
