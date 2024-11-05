@@ -19,3 +19,4 @@ MonoBehaviour:
   attackDamage: 100
   attackDistance: 1
   attackRate: 1
+  mentalDamage: 1

@@ -12,6 +12,8 @@ public class Monster : MonoBehaviour
     protected Animator animator;
     protected int curHealth;
     protected AIState aiState;
+    protected float playerDistance;
+
 
 
     private void Awake()
@@ -30,8 +32,12 @@ public class Monster : MonoBehaviour
 
     public bool RecognizePlayer()
     {
-        float distance = Vector3.Distance(player.transform.position,transform.position);
-        return distance <= data.recognizeDistance;
+        bool recognize = playerDistance <= data.recognizeDistance;
+        if (recognize)
+        {
+            //player.condition.curMental -= data.mentalDamage * Time.deltaTime;
+        }
+        return recognize;
     }
     public void Attack()
     {

@@ -1,13 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Venom : Monster
 {
     private float lastAttackTime;
-    private float playerDistance;
     public int RequiredJumpTimes;
-    private int JumpTimes = 0;
+    public int JumpTimes = 0;
     public GameObject playerSight;
 
 
@@ -18,7 +18,7 @@ public class Venom : Monster
         base.Start();
         playerSight = player.GetComponentInChildren<Camera>().transform.parent.gameObject;
         SetState(AIState.IdleState);
-        // subscribes onjump event
+        GameManager.Instance.Player.controller.JumpEvent += JumpOnHold;
     }
 
     // Update is called once per frame
@@ -82,7 +82,7 @@ public class Venom : Monster
         transform.position = player.transform.position + (playerSight.transform.forward +player.transform.forward).normalized + new Vector3 (0,0.5f,0);
     }
 
-    public void JumpOnHold()
+    public void JumpOnHold(InputAction.CallbackContext context)
     {
         if (aiState == AIState.AttackState)
         {
@@ -90,6 +90,7 @@ public class Venom : Monster
             if (JumpTimes >= RequiredJumpTimes)
             {
                 SetState(AIState.DeadState);
+                transform.rotation = Quaternion.Euler(0,0,0);
                 animator.SetTrigger("Die");
             }
         }

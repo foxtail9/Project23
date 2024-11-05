@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
 {
     private Player player;
     private PlayerConditions playerConditions;
+    public event Action<InputAction.CallbackContext> JumpEvent;
 
     [Header("Movement")]
     public float moveSpeed;
@@ -36,7 +37,6 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         player = GetComponent<Player>();
-
         Cursor.lockState = CursorLockMode.Locked;
     }
 
@@ -85,7 +85,9 @@ public class PlayerController : MonoBehaviour
             {
                 _rigidbody.AddForce(Vector2.up * jumpPower, ForceMode.Impulse);
                 playerConditions.OnJumpStaminaCost();
+                JumpEvent?.Invoke(context);
             }
+        
     }
 
     public void OnRun(InputAction.CallbackContext context)
