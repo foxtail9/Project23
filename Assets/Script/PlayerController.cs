@@ -141,6 +141,7 @@ public class PlayerController : MonoBehaviour
 
         if (GameManager.Instance.Player.equipInventory.slots[input].item != null)
         {
+            GameManager.Instance.Player.equipInventory.selectedItemIndex = input;
             Debug.Log($"{input}번째 아이템 장착");
             GameManager.Instance.Player.equipment.UnEquip();
             GameManager.Instance.Player.equipment.EquipNew(GameManager.Instance.Player.equipInventory.slots[input].item);

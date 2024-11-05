@@ -123,6 +123,63 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &34564959
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4586451593935500804, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_Name
+      value: FilmProjector (14)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
 --- !u!1001 &51747139
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -424,6 +481,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 62981673}
   m_CullTransparentMesh: 1
+--- !u!1001 &88410889
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4586451593935500804, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_Name
+      value: FilmProjector (11)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
 --- !u!1 &172860599
 GameObject:
   m_ObjectHideFlags: 0
@@ -1230,6 +1344,63 @@ PrefabInstance:
     - target: {fileID: 4586451593935500804, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
       propertyPath: m_Name
       value: FilmProjector (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+--- !u!1001 &438544768
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4586451593935500804, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_Name
+      value: FilmProjector (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2206,7 +2377,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.24
+      value: 8.49
       objectReference: {fileID: 0}
     - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2871,6 +3042,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1004352896}
   m_CullTransparentMesh: 1
+--- !u!1001 &1064334127
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4586451593935500804, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_Name
+      value: FilmProjector (13)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
 --- !u!1 &1161486144
 GameObject:
   m_ObjectHideFlags: 0
@@ -2973,6 +3201,177 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 3
   m_TargetDisplay: 0
+--- !u!1001 &1165738674
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4586451593935500804, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_Name
+      value: FilmProjector (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+--- !u!1001 &1180480013
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4586451593935500804, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_Name
+      value: FilmProjector (10)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+--- !u!1001 &1228899861
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4586451593935500804, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_Name
+      value: FilmProjector (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
 --- !u!1 &1272868436
 GameObject:
   m_ObjectHideFlags: 0
@@ -3647,6 +4046,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5984449e32dce35469d7fa57946fb333, type: 3}
+--- !u!1001 &1514217931
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4586451593935500804, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_Name
+      value: FilmProjector (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
 --- !u!1 &1565151255
 GameObject:
   m_ObjectHideFlags: 0
@@ -4213,6 +4669,120 @@ MonoBehaviour:
   index: 0
   icon: {fileID: 1703925152}
   outline: {fileID: 0}
+--- !u!1001 &1712638119
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4586451593935500804, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_Name
+      value: FilmProjector (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+--- !u!1001 &1757099262
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4586451593935500804, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_Name
+      value: FilmProjector (12)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
 --- !u!1 &1796254537
 GameObject:
   m_ObjectHideFlags: 0
@@ -4380,6 +4950,63 @@ Transform:
   - {fileID: 185684871}
   m_Father: {fileID: 1565151256}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1810687116
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283320897795782433, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4586451593935500804, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
+      propertyPath: m_Name
+      value: FilmProjector (9)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0d7c67c5d54be6345a4c56f7d242778f, type: 3}
 --- !u!1001 &1852816476
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5552,6 +6179,17 @@ SceneRoots:
   - {fileID: 437840446}
   - {fileID: 51747139}
   - {fileID: 900710478}
+  - {fileID: 438544768}
+  - {fileID: 1228899861}
+  - {fileID: 1165738674}
+  - {fileID: 1712638119}
+  - {fileID: 1514217931}
+  - {fileID: 1810687116}
+  - {fileID: 1180480013}
+  - {fileID: 1064334127}
+  - {fileID: 1757099262}
+  - {fileID: 88410889}
+  - {fileID: 34564959}
   - {fileID: 1494777750}
   - {fileID: 1391292223}
   - {fileID: 1646236233}

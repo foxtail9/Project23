@@ -9,8 +9,7 @@ public class EquipInventory : MonoBehaviour
     private PlayerController controller;
     private PlayerConditions conditions;
 
-    ItemData selectedItem;
-    int selectedItemIndex = 0;
+    public int selectedItemIndex = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -43,7 +42,7 @@ public class EquipInventory : MonoBehaviour
         }
     }
 
-    void UpdateUI()
+    public void UpdateUI()
     {
         for (int i = 0; i < slots.Length; i++)
         {
@@ -54,6 +53,7 @@ public class EquipInventory : MonoBehaviour
             }
             else
             {
+                slots[i].icon.color = new Color(46 / 255f, 46 / 255f, 46 / 255f, 1);
                 slots[i].Clear();
             }
         }
