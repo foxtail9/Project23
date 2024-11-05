@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Maps/TitleScene.unity
+    guid: 95b99a098f48c3942bae127a229724d3
+  - enabled: 1
+    path: Assets/Maps/ClosedHospital.unity
+    guid: 01bfd862f605c3f40be79fbd85683f88
   m_configObjects: {}
