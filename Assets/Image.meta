@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Script/Item/IDataLee.meta
+guid: a1862f660edd8554fb55aabc1cb700cc
+========
 guid: ee7d41c2715681c4a85c2a0dc907cf20
+>>>>>>>> main:Assets/Image.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

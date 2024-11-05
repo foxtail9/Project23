@@ -1,5 +1,10 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Prefab/Item_Lee.meta
+guid: 863a62030e4c7774ba216b950f123ba2
+folderAsset: yes
+========
 guid: d46cade9b21fdf44da1e8f6fd2fa03e6
+>>>>>>>> main:Assets/Maps/HyunSeok_Test.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

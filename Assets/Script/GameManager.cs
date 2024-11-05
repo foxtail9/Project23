@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     public float monsterSpawnTime;
     public float monsterDamageTime;
     public int monsterDamageRate = 1;
+    public int money = 0;
 
     private static GameManager _instance;
     public static GameManager Instance
@@ -27,6 +28,15 @@ public class GameManager : MonoBehaviour
         get { return _player; }
         set { _player = value; }
     }
+
+    public UIInventory inventory;
+
+    public UIInventory Inventory
+    {
+        get { return inventory; }
+        set { inventory = value; }
+    }
+
 
 
     // Update is called once per frame
