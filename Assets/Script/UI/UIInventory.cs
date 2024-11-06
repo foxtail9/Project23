@@ -25,6 +25,11 @@ public class UIInventory : MonoBehaviour
 
     private void Awake()
     {
+        if (GameManager.Instance.inventory != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
         GameManager.Instance.Inventory = this;
     }
     // Start is called before the first frame update

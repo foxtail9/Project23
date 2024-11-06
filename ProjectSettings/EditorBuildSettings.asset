@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Maps/ClosedHospital.unity
     guid: 01bfd862f605c3f40be79fbd85683f88
+  - enabled: 1
+    path: Assets/Maps/Market.unity
+    guid: 63e9f90c48bc8584eae76de4cc450c37
   m_configObjects: {}

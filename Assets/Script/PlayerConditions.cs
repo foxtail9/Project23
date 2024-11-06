@@ -19,14 +19,19 @@ public class PlayerConditions : MonoBehaviour
     public float curValueMental;
     public float maxValueMental;
 
-    public GameObject gameOver;
     public event Action onTakeDamage;
 
     // Start is called before the first frame update
     void Start()
     {
+        PlayerReset();
+    }
+
+    public void PlayerReset()
+    {
         curValueHP = maxValueHP;
         curValueStamina = maxValueStamina;
+        curValueMental = maxValueMental;
     }
 
     void Update()
@@ -68,11 +73,10 @@ public class PlayerConditions : MonoBehaviour
     }
     public bool OnJumpStaminaCost()
     {
-        if(curValueStamina - 15f < 0)
+        if(curValueStamina - 8f < 0)
         {
             return false;
         }
-        curValueStamina = Subtract(curValueStamina, 15f);
         return true;
     }
     public float Subtract(float parent, float value)
@@ -83,10 +87,12 @@ public class PlayerConditions : MonoBehaviour
 
     public void Die_Page()
     {
-        gameOver.SetActive(true);
+        GameObject mainCamera = Camera.main.gameObject;
+        CapsuleCollider sphereCollider = mainCamera.GetComponent<CapsuleCollider>();
+        sphereCollider.enabled = true;
         GameManager.Instance.Player.controller.canLook = false;
-        Time.timeScale = 0;
-        Debug.Log("플레이어가 죽었다.");
+        Camera.main.gameObject.GetComponent<Rigidbody>().isKinematic = false;
+        Camera.main.gameObject.GetComponent<Rigidbody>().useGravity = true;
     }
 
     public void TakePhysicalDamage(int damageAmount)

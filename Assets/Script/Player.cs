@@ -18,6 +18,11 @@ public class Player : MonoBehaviour
     public Transform dropPos;
     private void Awake()
     {
+        if (GameManager.Instance.Player != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
         GameManager.Instance.Player = this;
         controller = GetComponent<PlayerController>();
         condition = GetComponent<PlayerConditions>();
