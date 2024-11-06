@@ -3,35 +3,18 @@ using TMPro;
 
 public class DayAndNight : MonoBehaviour
 {
-    public TextMeshProUGUI gameTimeText; 
-    private float currentGameHour = 7f;
-    private float gameDuration = 24f; 
-    private float timeScale = 1f; 
+    private float currentGameHour;
 
-    public float StartTime
+    public float CurrentGameHour
     {
+        get { return currentGameHour; }
         set { currentGameHour = value; }
     }
 
-    private void Start()
-    {
-        UpdateGameTimeText(); 
-    }
 
     private void Update()
     {
-        UpdateGameHour();
-        UpdateFogDensity(); 
-        UpdateGameTimeText();
-    }
-
-    private void UpdateGameHour()
-    {
-        currentGameHour += Time.deltaTime * timeScale;
-        if (currentGameHour >= gameDuration)
-        {
-            currentGameHour = 0f;
-        }
+        UpdateFogDensity();
     }
 
     private void UpdateFogDensity()
@@ -56,12 +39,5 @@ public class DayAndNight : MonoBehaviour
         {
             RenderSettings.fogDensity = 0.23f; // 20:00 ~ 07:00
         }
-    }
-
-    private void UpdateGameTimeText()
-    {
-        int hours = Mathf.FloorToInt(currentGameHour);
-        int minutes = Mathf.FloorToInt((currentGameHour - hours) * 60);
-        gameTimeText.text = $"{hours:D2}:{minutes:D2}";
     }
 }

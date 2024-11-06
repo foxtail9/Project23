@@ -10,11 +10,11 @@ public class SceneController : MonoBehaviour
     public GameObject btnAM7;
     public GameObject btnPM9;
 
-    private DayAndNight dayAndNight; // DayAndNight 클래스의 인스턴스
+    private config GameTime; 
 
     private void Start()
     {
-        dayAndNight = FindObjectOfType<DayAndNight>();
+        GameTime = FindObjectOfType<config>();
     }
 
     public void TimeChoiceOn()
@@ -26,20 +26,14 @@ public class SceneController : MonoBehaviour
 
     public void HospitalSceneLoad_AM7()
     {
+        GameTime.SettingTime = 7f;
         SceneManager.LoadScene("ClosedHospital");
-        if (dayAndNight != null) // null 체크 후 startTime 설정
-        {
-            dayAndNight.StartTime = 7;
-        }
     }
 
     public void HospitalSceneLoad_PM9()
     {
+        GameTime.SettingTime = 21f;
         SceneManager.LoadScene("ClosedHospital");
-        if (dayAndNight != null) // null 체크 후 startTime 설정
-        {
-            dayAndNight.StartTime = 21;
-        }
     }
 
     public void TitleSceneLoad()
