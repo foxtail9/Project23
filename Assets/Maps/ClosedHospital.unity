@@ -62485,7 +62485,8 @@ GameObject:
   - component: {fileID: 7280677841020494090}
   - component: {fileID: 7290778870538565264}
   - component: {fileID: 7320832948642173648}
-  m_Layer: 0
+  - component: {fileID: 7320832948642173649}
+  m_Layer: 6
   m_Name: MainDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62514,6 +62515,18 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: fa7d1e57e63142a44880d53cb83b1781, type: 3}
+--- !u!114 &7320832948642173649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7313287860007657302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a8d95f4d2927b34ca668ec14c7a4db7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &7494883246574267612
 Transform:
   m_ObjectHideFlags: 0
