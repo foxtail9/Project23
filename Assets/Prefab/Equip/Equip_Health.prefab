@@ -114,7 +114,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 541112026820291259}
-  - component: {fileID: 4146356155406382461}
+  - component: {fileID: 3641511727590813608}
   m_Layer: 7
   m_Name: Equip_Health
   m_TagString: Untagged
@@ -138,7 +138,7 @@ Transform:
   - {fileID: 3171119100805805644}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4146356155406382461
+--- !u!114 &3641511727590813608
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -147,6 +147,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 9049729809233244913}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba999b569fb53f94991338191fd1434b, type: 3}
+  m_Script: {fileID: 11500000, guid: dea20fe8bd95dfc4ca01d8b10cf66dc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

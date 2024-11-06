@@ -27,7 +27,9 @@ public class EquipSlot : MonoBehaviour
 
     public void Clear()
     {
+        outline.enabled = false;
         item = null;
+        icon.sprite = null;
         //icon.gameObject.SetActive(false);
     }
 }

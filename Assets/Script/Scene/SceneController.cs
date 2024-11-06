@@ -10,35 +10,45 @@ public class SceneController : MonoBehaviour
     public GameObject btnAM7;
     public GameObject btnPM9;
 
+    private config GameTime; 
+
+    private void Start()
+    {
+        GameTime = FindObjectOfType<config>();
+    }
+
     public void TimeChoiceOn()
     {
         playbtn.SetActive(false);
         btnAM7.SetActive(true);
         btnPM9.SetActive(true);
     }
+
     public void HospitalSceneLoad_AM7()
     {
+        GameTime.SettingTime = 7f;
         SceneManager.LoadScene("ClosedHospital");
-        GameTime.startTime = 7;
     }
+
     public void HospitalSceneLoad_PM9()
     {
+        GameTime.SettingTime = 21f;
         SceneManager.LoadScene("ClosedHospital");
-        GameTime.startTime = 21;
     }
-    
+
     public void TitleSceneLoad()
     {
         SceneManager.LoadScene("TitleScene");
     }
+
     public void ExitButton()
     {
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #elif UNITY_WEBPLAYER
-            Application.OpenURL(https://spartacodingclub.kr/);
+        Application.OpenURL("https://spartacodingclub.kr/");
 #else
-            Application.Quit();
+        Application.Quit();
 #endif
     }
 }
