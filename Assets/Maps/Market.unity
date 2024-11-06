@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: 36752243}
   - component: {fileID: 36752242}
   - component: {fileID: 36752244}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Window_Barrier (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1124,7 +1124,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &222305629
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3281,7 +3281,7 @@ GameObject:
   - component: {fileID: 724144240}
   - component: {fileID: 724144239}
   - component: {fileID: 724144241}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Window_Barrier (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8699,7 +8699,8 @@ GameObject:
   - component: {fileID: 33505029915131141}
   - component: {fileID: 23289950076704055}
   - component: {fileID: 33505029915131142}
-  m_Layer: 0
+  - component: {fileID: 33505029915131143}
+  m_Layer: 6
   m_Name: Window_Barrier
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8872,6 +8873,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.1483133, y: 1.6712856, z: 0.030261008}
   m_Center: {x: -0.004579813, y: 0.7984262, z: 0.03787631}
+--- !u!114 &33505029915131143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1191410789478029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b4d3787cb8323845aecfe1c4d26f162, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShopUI: {fileID: 1365882242}
 --- !u!33 &33631654384654406
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -9592,7 +9606,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4273150041800187775}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DiningRoom_EnterFrame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9611,7 +9625,7 @@ GameObject:
   - component: {fileID: 4262808030046545859}
   - component: {fileID: 4255873906480813621}
   - component: {fileID: 4303321222613287453}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DiningRoom_EnterFrame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
