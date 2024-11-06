@@ -39,6 +39,13 @@ public class GameManager : MonoBehaviour
         set { inventory = value; }
     }
 
+    public EquipInventory equipInventory;
+    public EquipInventory EquipInventory
+    {
+        get { return equipInventory; }
+        set { equipInventory = value; }
+    }
+
     void Awake()
     {
         daytext = GameObject.Find("Day").GetComponent<TextMeshProUGUI>();

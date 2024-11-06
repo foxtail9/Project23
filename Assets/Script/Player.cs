@@ -7,7 +7,6 @@ public class Player : MonoBehaviour
 {
     public PlayerController controller;
     public PlayerConditions condition;
-    public EquipInventory equipInventory;
     public Equipment equipment;
 
     public ItemData itemData;
@@ -16,6 +15,7 @@ public class Player : MonoBehaviour
     public Action addItem;
 
     public Transform dropPos;
+    public GameObject deathPage;
     private void Awake()
     {
         if (GameManager.Instance.Player != null)

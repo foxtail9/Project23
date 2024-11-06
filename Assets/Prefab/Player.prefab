@@ -311,7 +311,7 @@ MonoBehaviour:
   passiveValueStamina: 5
   is_Tired: 0
   curValueMental: 0
-  maxValueMental: 0
+  maxValueMental: 100
 --- !u!114 &1467617015397427636
 MonoBehaviour:
   m_ObjectHideFlags: 0

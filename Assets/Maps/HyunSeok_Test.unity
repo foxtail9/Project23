@@ -2013,6 +2013,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slots: []
+  selectedItemIndex: 0
 --- !u!1001 &828772193
 PrefabInstance:
   m_ObjectHideFlags: 0
