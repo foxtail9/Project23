@@ -9,6 +9,11 @@ public class PlyerUIManager : MonoBehaviour
     [SerializeField] private Image staminaBar;
     [SerializeField] private GameObject damageui;
 
+    private void Start()
+    {
+        playerConditions = GameManager.Instance.Player.condition;
+    }
+
     void Update()
     {
         UpdateHealthBar();

@@ -13,13 +13,12 @@ MonoBehaviour:
   m_Name: Scrap_RedGemData
   m_EditorClassIdentifier: 
   displayName: "\uBCF4\uC11D"
-  description: "\uAC00\uACA9:5000"
+  description: "\uC601\uB871\uD55C \uBE5B\uAE54\uC744 \uB744\uB294 \uAD11\uBB3C\uC774\uB2E4"
   type: 2
   icon: {fileID: 21300000, guid: 052580296d469114d812a3a58facf451, type: 3}
   dropPrefab: {fileID: 3527359380865563172, guid: 27729aa8a897b9f4e8eb18fd6b498d79, type: 3}
-  price: 5000
+  buyPrice: 0
+  sellPrice: 500
   cnaEquip: 0
   equipPrefab: {fileID: 0}
-  canStack: 1
-  maxStackAmount: 10
   consumables: []
