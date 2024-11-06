@@ -15,7 +15,7 @@ public class ToNextDay : MonoBehaviour,IInteractable
         GameManager.Instance.dayCount++;
         if (GameManager.Instance.dayCount ==4)
         {
-            // to ending
+            SceneManager.LoadScene("Ending");
         }
         else
         {
