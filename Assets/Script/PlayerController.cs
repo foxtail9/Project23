@@ -134,18 +134,18 @@ public class PlayerController : MonoBehaviour
 
     void Equip(int input)
     {
-        for (int i = 0; i < GameManager.Instance.Player.equipInventory.slots.Length; i++)
+        for (int i = 0; i < GameManager.Instance.EquipInventory.slots.Length; i++)
         {
-            GameManager.Instance.Player.equipInventory.slots[i].outline.enabled = false;
+            GameManager.Instance.EquipInventory.slots[i].outline.enabled = false;
         }
 
-        if (GameManager.Instance.Player.equipInventory.slots[input].item != null)
+        if (GameManager.Instance.EquipInventory.slots[input].item != null)
         {
-            GameManager.Instance.Player.equipInventory.selectedItemIndex = input;
+            GameManager.Instance.EquipInventory.selectedItemIndex = input;
             Debug.Log($"{input}번째 아이템 장착");
             GameManager.Instance.Player.equipment.UnEquip();
-            GameManager.Instance.Player.equipment.EquipNew(GameManager.Instance.Player.equipInventory.slots[input].item);
-            GameManager.Instance.Player.equipInventory.slots[input].outline.enabled = true;
+            GameManager.Instance.Player.equipment.EquipNew(GameManager.Instance.EquipInventory.slots[input].item);
+            GameManager.Instance.EquipInventory.slots[input].outline.enabled = true;
         }
     }
 

@@ -17,6 +17,7 @@ public class EquipInventory : MonoBehaviour
         conditions = GameManager.Instance.Player.condition;
 
         GameManager.Instance.Player.addEquip += AddEquip;
+        GameManager.Instance.equipInventory = this;
 
         slots = new EquipSlot[gameObject.transform.childCount];
 
