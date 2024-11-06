@@ -13,6 +13,7 @@ public class CryingAngel : Monster
     {
         base.Start();
         SetState(AIState.IdleState);
+        playerSight = GameManager.Instance.Player.gameObject.GetComponentInChildren<Camera>();
     }
 
     // Update is called once per frame

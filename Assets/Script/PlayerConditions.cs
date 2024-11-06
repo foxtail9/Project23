@@ -24,7 +24,11 @@ public class PlayerConditions : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        PlayerReset();
+    }
+
+    public void PlayerReset()
+    {
         curValueHP = maxValueHP;
         curValueStamina = maxValueStamina;
         curValueMental = maxValueMental;
