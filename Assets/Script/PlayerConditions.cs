@@ -101,6 +101,7 @@ public class PlayerConditions : MonoBehaviour
 
     void NextDay()
     {
+        
         GameManager.Instance.Player.deathPage.gameObject.SetActive(true);
     }
 
