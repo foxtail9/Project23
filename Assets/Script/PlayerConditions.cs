@@ -33,6 +33,7 @@ public class PlayerConditions : MonoBehaviour
         curValueHP = maxValueHP;
         curValueStamina = maxValueStamina;
         curValueMental = maxValueMental;
+        is_Die = false;
     }
 
     void Update()
@@ -89,16 +90,12 @@ public class PlayerConditions : MonoBehaviour
 
     public void Die_Page()
     {
-        GameManager.Instance.Player.controller.canLook = false;
-        Camera.main.gameObject.GetComponent<Rigidbody>().isKinematic = false;
-        Camera.main.gameObject.GetComponent<Rigidbody>().useGravity = true;
-
-        Invoke("NextDay", 2f);
+        
+        Invoke("NextDay", 0.5f);
     }
 
     void NextDay()
     {
-        
         GameManager.Instance.Player.deathPage.gameObject.SetActive(true);
     }
 

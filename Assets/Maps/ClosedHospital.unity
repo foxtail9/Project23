@@ -23506,6 +23506,7 @@ GameObject:
   - component: {fileID: 987025230}
   - component: {fileID: 987025232}
   - component: {fileID: 987025231}
+  - component: {fileID: 987025233}
   m_Layer: 3
   m_Name: UIMoney
   m_TagString: Untagged
@@ -23629,6 +23630,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 987025229}
   m_CullTransparentMesh: 1
+--- !u!114 &987025233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987025229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23dda259c5a5f7e4fac45c07a47dd0d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &992174350
 GameObject:
   m_ObjectHideFlags: 0

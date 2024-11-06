@@ -18,5 +18,5 @@ MonoBehaviour:
   health: 9999
   attackDamage: 100
   attackDistance: 2.3
-  attackRate: 1
+  attackRate: 15
   mentalDamage: 1

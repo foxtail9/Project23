@@ -12,6 +12,7 @@ public class DeathPage : MonoBehaviour
             GameManager.Instance.dayCount++;
             if (GameManager.Instance.dayCount == 4)
             {
+                GameManager.Instance.Player.deathPage.gameObject.SetActive(false);
                 SceneManager.LoadScene("Ending");
             }
             else
@@ -25,7 +26,8 @@ public class DeathPage : MonoBehaviour
                 GameManager.Instance.inventory.UpdateUI();
                 GameManager.Instance.Player.gameObject.transform.position = new Vector3(0f, 1.4f, 0f);
                 GameManager.Instance.Player.deathPage.gameObject.SetActive(false);
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                GameManager.Instance.Player.condition.is_Die = false;
+                SceneManager.LoadScene("ClosedHospital");
 
             }
                 Debug.Log("다음날로 이동");
