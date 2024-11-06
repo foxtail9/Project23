@@ -33,6 +33,10 @@ public class Monster : MonoBehaviour
     public bool RecognizePlayer()
     {
         bool recognize = playerDistance <= data.recognizeDistance;
+        if (Mathf.Abs(player.transform.position.y - transform.position.y) > 3)
+        {
+            recognize = false;
+        }
         if (recognize)
         {
            conditions.curValueMental -= data.mentalDamage * Time.deltaTime * 0.1f;
