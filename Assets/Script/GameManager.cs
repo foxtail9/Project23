@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public float monsterDamageTime;
     public int monsterDamageRate = 1;
     public int money = 0;
+    public int dayNumber = 1;
 
     private static GameManager _instance;
     public static GameManager Instance

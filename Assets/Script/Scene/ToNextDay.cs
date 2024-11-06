@@ -11,6 +11,9 @@ public class ToNextDay : MonoBehaviour,IInteractable
 
     public void OnInteract()
     {
+        //gamemanager.ins.day ++
+        // to Map
+        
         throw new System.NotImplementedException();
     }
 
