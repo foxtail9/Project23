@@ -27,6 +27,7 @@ public class PlayerConditions : MonoBehaviour
         
         curValueHP = maxValueHP;
         curValueStamina = maxValueStamina;
+        curValueMental = maxValueMental;
     }
 
     void Update()
@@ -72,7 +73,6 @@ public class PlayerConditions : MonoBehaviour
         {
             return false;
         }
-        curValueStamina = Subtract(curValueStamina, 8f);
         return true;
     }
     public float Subtract(float parent, float value)

@@ -81,7 +81,7 @@ public class PlayerController : MonoBehaviour
             if (context.phase == InputActionPhase.Started && IsGrounded())
             {
                 _rigidbody.AddForce(Vector2.up * jumpPower, ForceMode.Impulse);
-                GameManager.Instance.Player.condition.OnJumpStaminaCost();
+                GameManager.Instance.Player.condition.curValueStamina -= 10f;
                 JumpEvent?.Invoke(context);
             }
         

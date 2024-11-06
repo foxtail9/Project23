@@ -17,6 +17,6 @@ MonoBehaviour:
   recognizeDistance: 15
   health: 9999
   attackDamage: 100
-  attackDistance: 1
+  attackDistance: 3
   attackRate: 1
   mentalDamage: 1

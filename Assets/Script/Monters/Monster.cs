@@ -35,7 +35,7 @@ public class Monster : MonoBehaviour
         bool recognize = playerDistance <= data.recognizeDistance;
         if (recognize)
         {
-            //player.condition.curMental -= data.mentalDamage * Time.deltaTime;
+           conditions.curValueMental -= data.mentalDamage * Time.deltaTime * 0.1f;
         }
         return recognize;
     }
