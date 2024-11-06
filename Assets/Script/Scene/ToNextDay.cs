@@ -19,7 +19,7 @@ public class ToNextDay : MonoBehaviour,IInteractable
         }
         else
         {
-            GameManager.Instance.Player.gameObject.transform.position = Vector3.zero;
+            GameManager.Instance.Player.gameObject.transform.position = new Vector3(0f,1.4f,0f);
             SceneManager.LoadScene("ClosedHospital");
         }
     }

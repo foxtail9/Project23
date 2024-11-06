@@ -6,6 +6,12 @@ public class DontDestroy : MonoBehaviour
 {
     private void Awake()
     {
+        if (GameManager.Instance.dayCount != 1)
+        {
+            Destroy(gameObject);
+            return;
+        }
         DontDestroyOnLoad(gameObject);
     }
 }
+
