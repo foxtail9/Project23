@@ -89,9 +89,6 @@ public class PlayerConditions : MonoBehaviour
 
     public void Die_Page()
     {
-        GameObject mainCamera = Camera.main.gameObject;
-        CapsuleCollider sphereCollider = mainCamera.GetComponent<CapsuleCollider>();
-        sphereCollider.enabled = true;
         GameManager.Instance.Player.controller.canLook = false;
         Camera.main.gameObject.GetComponent<Rigidbody>().isKinematic = false;
         Camera.main.gameObject.GetComponent<Rigidbody>().useGravity = true;
