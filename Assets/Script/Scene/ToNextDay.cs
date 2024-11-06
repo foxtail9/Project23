@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ToNextDay : MonoBehaviour,IInteractable
 {
@@ -11,10 +12,16 @@ public class ToNextDay : MonoBehaviour,IInteractable
 
     public void OnInteract()
     {
-        //gamemanager.ins.day ++
-        // to Map
-        
-        throw new System.NotImplementedException();
+        GameManager.Instance.dayCount++;
+        if (GameManager.Instance.dayCount ==4)
+        {
+            // to ending
+        }
+        else
+        {
+            GameManager.Instance.Player.gameObject.transform.position = Vector3.zero;
+            SceneManager.LoadScene("ClosedHospital");
+        }
     }
 
     

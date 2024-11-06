@@ -12,6 +12,7 @@ public class ToMarketScene : MonoBehaviour, IInteractable
 
     public void OnInteract()
     {
+        GameManager.Instance.Player.gameObject.transform.position = new Vector3(-2.4f, 0.8f, 1.8f);
         SceneManager.LoadScene("Market");
     }
 }
