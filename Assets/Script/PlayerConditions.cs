@@ -15,6 +15,7 @@ public class PlayerConditions : MonoBehaviour
     public float maxValueStamina;
     public float passiveValueStamina;
     public bool is_Tired = false;
+    public bool is_Die = false;
 
     public float curValueMental;
     public float maxValueMental;
@@ -54,8 +55,9 @@ public class PlayerConditions : MonoBehaviour
             GameManager.Instance.Player.controller.moveSpeed = 5;
         }
 
-        if (curValueHP <= 0)
+        if (curValueHP <= 0 && is_Die == false)
         {
+            is_Die = true;
             Die_Page();
         }
     }
@@ -93,6 +95,13 @@ public class PlayerConditions : MonoBehaviour
         GameManager.Instance.Player.controller.canLook = false;
         Camera.main.gameObject.GetComponent<Rigidbody>().isKinematic = false;
         Camera.main.gameObject.GetComponent<Rigidbody>().useGravity = true;
+
+        Invoke("NextDay", 2f);
+    }
+
+    void NextDay()
+    {
+        GameManager.Instance.Player.deathPage.gameObject.SetActive(true);
     }
 
     public void TakePhysicalDamage(int damageAmount)

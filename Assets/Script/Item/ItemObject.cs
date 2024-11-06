@@ -25,7 +25,7 @@ public class ItemObject : MonoBehaviour, IInteractable
         GameManager.Instance.Player.itemData = data;
         if (GameManager.Instance.Player.itemData.cnaEquip == true)
         {
-            if (GameManager.Instance.Player.equipInventory.slots.Take(4).Any(slot => slot.item == null))
+            if (GameManager.Instance.EquipInventory.slots.Take(4).Any(slot => slot.item == null))
             {
                 GameManager.Instance.Player.addEquip?.Invoke();
                 Debug.Log("장착 아이템");

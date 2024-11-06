@@ -9,8 +9,8 @@ public class EquipHealth : Equip
         GameManager.Instance.Player.condition.curValueHP = Mathf.Min(
     GameManager.Instance.Player.condition.curValueHP + 30f,
     GameManager.Instance.Player.condition.maxValueHP);
-        GameManager.Instance.Player.equipInventory.slots[GameManager.Instance.Player.equipInventory.selectedItemIndex].item = null;
-        GameManager.Instance.Player.equipInventory.UpdateUI();
+        GameManager.Instance.EquipInventory.slots[GameManager.Instance.EquipInventory.selectedItemIndex].item = null;
+        GameManager.Instance.EquipInventory.UpdateUI();
         Destroy(gameObject);
     }
 }

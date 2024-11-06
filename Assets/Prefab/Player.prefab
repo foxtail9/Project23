@@ -266,10 +266,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 0}
   condition: {fileID: 0}
-  equipInventory: {fileID: 0}
   equipment: {fileID: 0}
   itemData: {fileID: 0}
   dropPos: {fileID: 4291515503727346529}
+  deathPage: {fileID: 0}
 --- !u!114 &75422447879582223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -310,6 +310,7 @@ MonoBehaviour:
   maxValueStamina: 100
   passiveValueStamina: 5
   is_Tired: 0
+  is_Die: 0
   curValueMental: 0
   maxValueMental: 100
 --- !u!114 &1467617015397427636
@@ -460,7 +461,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curEquip: {fileID: 0}
-  equipParent: {fileID: 0}
+  equipParent: {fileID: 6905916138919978419}
 --- !u!114 &9070610878569520144
 MonoBehaviour:
   m_ObjectHideFlags: 0
